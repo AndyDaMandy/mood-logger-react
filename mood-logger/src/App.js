@@ -5,26 +5,15 @@ import Moods from './components/Moods';
 import Mood from './components/Mood';
 import Navbar from './components/Navbar';
 import { useEffect, useState } from 'react';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+//import Routes from "./routes";
 
-
-
+//export default props => <>{Routes}</>;
 //const API_URL = "https://wispy-smoke-4005.fly.dev/api/v1/moods";
 const API_URL = "http://localhost:3000/api/v1/moods"
 
 function getAPIData() {
   return axios.get(API_URL).then((response) => response.data)
 }
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <div>Hello world!</div>,
-  },
-]);
 
 function App() {
   const [moods, setMoods] = useState([]);

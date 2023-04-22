@@ -15,14 +15,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_16_153918) do
   enable_extension "plpgsql"
 
   create_table "moods", force: :cascade do |t|
-    t.datetime "date_time"
-    t.string "vibe"
-    t.string "health"
-    t.string "activity"
-    t.string "happiness"
-    t.string "work"
-    t.string "school"
-    t.string "love"
+    t.integer "vibe", default: 0
+    t.integer "health", default: 0
+    t.integer "activity", default: 0
+    t.integer "happiness"
+    t.integer "work", default: 0
+    t.integer "school", default: 0
+    t.integer "love", default: 0
     t.text "note"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

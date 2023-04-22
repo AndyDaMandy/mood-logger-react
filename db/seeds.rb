@@ -5,13 +5,4 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first
-#t.datetime "date_time"
-#t.string "vibe"
-#t.string "health"
-#t.string "activity"
-#t.string "happiness"
-#t.string "work"
-#t.string "school"
-#t.string "love"
-#t.text "note"
-Mood.create([{date_time: Time.now, vibe: "Good", health: "Bad", activity: "Good", happiness: "Good", work: "Bad", school:"Bad", love: "good", note: "I just wanna play video game!"}, {date_time: Time.now, vibe: "Good", health: "Bad", activity: "Good", happiness: "Good", work: "Bad", school:"Bad", love: "good", note: "I just wanna play video game!"}, {date_time: Time.now, vibe: "Good", health: "Bad", activity: "Good", happiness: "Good", work: "Bad", school:"Bad", love: "good", note: "I just wanna play video game!"}, {date_time: Time.now, vibe: "Good", health: "Bad", activity: "Good", happiness: "Good", work: "Bad", school:"Bad", love: "good", note: "I just wanna play video game!"}, {date_time: Time.now, vibe: "Good", health: "Bad", activity: "Good", happiness: "Good", work: "Bad", school:"Bad", love: "good", note: "I just wanna play video game!"}])
+Mood.create([{vibe: 0, health: 0, activity: 0, happiness:0, work: 0, school: 5, love: 2, note: "Testing"}, {vibe: 1, health: 2, activity: 0, happiness: 0, work: 0, school: 5, love: 2, note: "Testing"}])
